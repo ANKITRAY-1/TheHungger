@@ -1,0 +1,365 @@
+﻿    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      overflow-x: hidden;
+    }
+    a{text-decoration: none;}
+    p {
+      font-family: 'Shippori Mincho B1', serif;
+    }
+
+    /*navbar*/
+    .topnav {
+      overflow: hidden;
+      background-color: rgb(37, 35, 168);
+
+    }
+
+    .topnav a {
+      float: right;
+      display: block;
+      color: #ffffff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+
+    .topnav a:hover {
+      background-color: rgb(175, 175, 175);
+      color: 100ck;
+    }
+
+    .topnav a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .topnav .icon {
+      display: none;
+    }
+
+    @media screen and (max-width: 600px) {
+      .topnav a:not(:first-child) {
+        display: none;
+      }
+
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .topnav.responsive {
+        position: relative;
+      }
+
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+
+    .container {
+      position: relative;
+      text-align: center;
+      color: rgb(253, 251, 251);
+      font-size: 100px;
+      background-color: rgb(62, 76, 206);
+    }
+    
+
+    .contenta {
+      padding: 16px;
+      font-size: 18px;
+      color: #000000;
+      text-align: left;
+    }
+
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 100px;
+
+    }
+
+    @media screen and (max-width: 800px) {
+      .center {
+        font-size: 50px;
+      }
+    }
+
+    @media screen and (max-width: 300px) {
+      .center {
+        font-size: 25px;
+      }
+    }
+
+    .mybtn {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      background-color: rgb(255, 255, 255);
+      padding: 6px 10px;
+      font-size: 20px;
+      margin: 9px 5px;
+      width: fit-content;
+      border: none;
+      border-radius: 50%;
+    }
+
+    .mybtn:hover {
+      background-color: rgb(255, 104, 16);
+    }
+
+    @media screen and (max-width: 600px) {
+      .mybtn {
+        font-size: 15px;
+        padding: 5px 7px;
+        margin: 6px 2px;
+        width: 47%;
+      }
+    }
+
+    @media screen and (max-width: 300px) {
+      .mybtn {
+        font-size: 15px;
+        padding: 5px 7px;
+        margin: 6px 2px;
+        width: 100%;
+      }
+    }
+
+    /* Create three unequal columns that floats next to each other */
+    .column {
+      float: left;
+      padding: 10px;
+
+    }
+
+    .left,
+    .right {
+      width: 15%;
+    }
+
+    .middle {
+      width: 70%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    @media screen and (max-width: 600px) {
+
+      .left,
+      .right,
+      .middle {
+        width: 100%;
+      }
+
+      .middle {
+        padding: 10px 20px;
+      }
+    }
+
+
+/*dish card*/
+.dishcard {
+  position: relative;
+  width: 45%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 110px;
+  margin-left: 3.33%;
+  float: left;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  z-index: -1;
+  background-image: url(i.jpg);
+}
+.dishcard a{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: transparent;
+  transition: 1.3s;
+  text-decoration: none;
+}
+.dishcard:hover{
+  background-color: lightgreen;
+}
+.dishcard img{
+  height: 80px;
+  width: 80px;
+  margin-top: 15px;
+  margin-left: 15px;
+  border-radius: 50%;
+}
+#vegimg{
+  position:absolute;
+  height: 20px;
+  width: 20px;
+  margin: 0 0 0 5px;
+  border-radius:0;
+  float: left;
+}
+.dishcard p1{
+  position: absolute;
+  top: 12px;
+  left:110px;
+  font-size: 25px;
+  color: rgb(61, 58, 58);
+  line-height: 100%;
+
+}
+.dishcard p2{
+  position: absolute;
+  top: 10px;
+  right:20px;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.753);
+}
+.dishcard p3 {
+  position: absolute;
+  bottom: 10px;
+  right:20px;
+  font-size: 20px;
+  color: rgb(73, 70, 70);
+  transition: 2s;
+}
+p3 :hover{
+  color:rgb(0, 0, 0);
+}
+@media screen and (max-width : 600px){
+  .dishcard{
+    width: 95%;
+    margin-left: 2.5%;
+    height: 100px;
+  }
+  .dishcard img{
+    height: 60px;
+    width: 60px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+  }
+  .dishcard p1{
+    top: 28px;
+    left:80px;
+    font-size: 20px;
+  }
+  .dishcard p2{
+    top: 3px;
+    right:10px;
+    font-size: 20px;
+    
+  }
+  .dishcard p3{
+    bottom: 10px;
+    right:15px;
+    font-size: 13px;
+  }
+  #vegimg{
+    position:absolute;
+    height: 17px;
+    width: 17px;
+    margin: 0 0 0 5px;
+    border-radius:0;
+    float: left;
+    
+  }
+}
+
+
+    #cartBtn {
+      position: fixed;
+      bottom: 5px;
+      right: 5px;
+      z-index: 99;
+      font-size: 15px;
+      border: none;
+      outline: none;
+      background-color: rgb(21, 63, 253);
+      color: white;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 4px;
+    }
+    
+    #cartBtn:hover {
+      background-color: #555;
+    }
+    #food{
+      position: fixed;
+      bottom: 5px;
+      left: 5px;
+      z-index: 99;
+      font-size: 15px;
+      border: none;
+      outline: none;
+      background-color: rgb(21, 63, 253);
+      color: white;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 4px;
+    }
+    
+    #food:hover {
+      background-color: #555;
+    }
+
+
+
+
+.column2 {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+  text-align: center;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row2 {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column2 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.footer{
+ float: right;
+  padding: 20px 15px;
+  background-color: rgb(43, 41, 41);
+  color: #818181;
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+
+}

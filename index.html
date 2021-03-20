@@ -1,0 +1,2399 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <title>FudView</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <button onclick="topFunction()" id="cartBtn"><i class="fa fa-shopping-cart"></i></button>
+  <button id="food"><a href="#Food"><i class='fa fa-cutlery'></i></a></button>
+
+  <div class="topnav" id="myTopnav">
+    <a style="float: left;" href="#contact"><i class="fa fa-fw fa-home"></i>Home</a>
+    <a href="#contact"><i class="fa fa-shopping-cart"></i> Cart</a>
+    <a href="#Food"><i class='fa fa-cutlery'></i> Food Varities</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <div class="container">
+    <img src="a.jpg" alt="Bugger" style="width: 100%;  opacity: 0.7;">
+    <div class="center" style="font-family: 'Ballet', cursive;">The Hungger</div>
+  </div>
+
+  <div class="contenta">
+    <h2>About The Hungger</h2>
+    <h3>Tradition since 1889</h3>
+    <img src="a.jpg" alt="Bugger" align="right" height="250px" width="250px" hspace="10px" vspace="5px">
+    <p style="text-align: justify;">The Catering was founded in 100100 by Mr. Smith in lorem ipsum dolor sit
+      amet,consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodoconsequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+      pariatur.Weonly use seasonal ingredients.</p>
+    <p style="text-align: justify;">The Catering was founded in 100100 by Mr. Smith in lorem ipsum dolor sit
+      amet,consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodoconsequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+      pariatur.Weonly use seasonal ingredients.</p>
+    <p style="opacity: 0.5; text-align: justify;">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+      officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt
+      utlaborecommodo consequat.</p>
+  </div>
+
+  <div id="Food">
+    <div class="w3-container">
+      <div class="row">
+        <div class="column left"></div>
+        <div class="column middle" style="text-align: center;">
+          <b style="font-size: 25px;">Chose a varities</b><br>
+          <button class="w3-bar-item mybtn" onclick="varites('1')"><a href="#1">Veg Starter</a></button>
+          <button class="w3-bar-item mybtn" onclick="varites('2')"><a href="#2">Non-veg starter</a></button>
+          <button class="w3-bar-item mybtn" onclick="varites('3')"><a href="#3">Sandwich</a></button>
+          <button class="w3-bar-item mybtn" onclick="varites('4')"><a href="#4">Salad</a></button>
+          <button class="w3-bar-item mybtn" onclick="varites('5')"><a href="#5">Soup</a></button>
+          <button class="w3-bar-item mybtn" onclick="varites('6')"><a href="#6">Chineese starter</a></button>
+          <button class="w3-bar-item mybtn" onclick="varites('7')"><a href="#7">Chineese main course veg &
+              non-veg</a></button>
+          <button class="w3-bar-item mybtn" onclick="varites('8')"><a href="#8">Chineese rice and noodles</a></button>
+          <button class="w3-bar-item mybtn" onclick="varites('9')"><a href="#9">Main course veg</a></button>
+          <button class="w3-bar-item mybtn" onclick="varites('10')"><a href="#10">Main course non veg</a></button>
+          <button class="w3-bar-item mybtn" onclick="varites('11')"><a href="#11">Tandoori Veg</a></button>
+          <button class="w3-bar-item mybtn" onclick="varites('12')"><a href="#12">Tandoori Non-veg</a></button>
+          <button class="w3-bar-item mybtn" onclick="varites('13')"><a href="#13">Roti/Indian Breads</a></button>
+          <button class="w3-bar-item mybtn" onclick="varites('14')"><a href="#14">Beverage</a></button>
+          <button class="w3-bar-item mybtn" onclick="varites('15')"><a href="#15">Indian Rice's & Biryani</a></button>
+          <button class="w3-bar-item mybtn" onclick="varites('16')"><a href="#16">Pizza's</a></button>
+          <button class="w3-bar-item mybtn" onclick="varites('17')"><a href="#17">Desert's</a></button>
+          <br>
+        </div>
+        <div class="column right">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="1" class="w3-container varites">
+    <h1 style="text-align: center;">Veg starter</h1>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+  </div>
+  <div id="2" class="w3-container varites" style="display:none">
+    <h1 style="text-align: center;">Non-veg starter</h1>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="h.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="h.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="h.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="h.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="h.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="h.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="h.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="h.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="h.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="h.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="h.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="h.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+  </div>
+  <div id="3" class="w3-container varites" style="display:none">
+    <h1 style="text-align: center;">Sandwich</h1>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+  </div>
+  <div id="4" class="w3-container varites" style="display:none">
+    <h1 style="text-align: center;">Salad</h1>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+  </div>
+  <div id="5" class="w3-container varites" style="display:none">
+    <h1 style="text-align: center;">Soup</h1>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+  </div>
+  <div id="6" class="w3-container varites" style="display:none">
+    <h1 style="text-align: center;">Chineese starter</h1>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+  </div>
+  <div id="7" class="w3-container varites" style="display:none">
+    <h1 style="text-align: center;">Chineese main course veg & non-veg</h1>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+  </div>
+  <div id="8" class="w3-container varites" style="display:none">
+    <h1 style="text-align: center;">Chineese rice and noodles</h1>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+  </div>
+  <div id="9" class="w3-container varites" style="display:none">
+    <h1 style="text-align: center;">Main course veg</h1>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+  </div>
+  <div id="10" class="w3-container varites" style="display:none">
+    <h1 style="text-align: center;">Main course non veg</h1>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+  </div>
+  <div id="11" class="w3-container varites" style="display:none">
+    <h1 style="text-align: center;">Tandoori Veg</h1>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+  </div>
+  <div id="12" class="w3-container varites" style="display:none">
+    <h1 style="text-align: center;">Tandoori Non-veg</h1>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+  </div>
+  <div id="13" class="w3-container varites" style="display:none">
+    <h1 style="text-align: center;">Roti/Indian Breads</h1>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+  </div>
+  <div id="14" class="w3-container varites" style="display:none">
+    <h1 style="text-align: center;">Beverage</h1>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+  </div>
+  <div id="15" class="w3-container varites" style="display:none">
+    <h1 style="text-align: center;">Indian Rice's & Biryani</h1>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+  </div>
+  <div id="16" class="w3-container varites" style="display:none">
+    <h1 style="text-align: center;">Pizza's</h1>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+  </div>
+  <div id="17" class="w3-container varites" style="display:none">
+    <h1 style="text-align: center;">Desert's</h1>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Schezwan Corn Dosa<img src="g.jpg" id="vegimg"></p1>
+
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('Schezwan Corn Dosa',200)">Add to cart <i class="fa fa-shopping-cart"></i>
+          </span> | <span>More
+            Info</span> </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-right">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Tandoori Roti<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('tandoori roti', 100)">Add to cart <i class="fa fa-shopping-cart"></i></span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+    <div class="dishcard w3-animate-left">
+      <a href="javascript:void(0)">
+        <img src="b.jpg">
+        <p1> Pakoda<img src="g.jpg" id="vegimg"></p1>
+        <p2> &#8377 200</p2>
+        <p3><span onclick="openCart('pakoda', 250)">Add to cart <i class="fa fa-shopping-cart"></i> </span> |
+          <span>More
+            Info</span>
+        </p3>
+      </a>
+    </div>
+  </div>
+  </div>
+
+  <div class="footer">
+    <div class="row2">
+      <div class="column2">
+        <center> <img src="d.jpg" width="100px" height="100px" style="border-radius: 50%;">
+          <p> Digital Menu by The Hungger</p>
+        </center>
+      </div>
+      <div class="column2">
+        <p>Copyright <i class="fa fa-copyright"> </i> 2021. All Rights Reserved.</p>
+        <p>Made with <i class="fa fa-heart" style="color:red"> </i> in INDIA <img src="c.JPG"> by OneGo WebDesign</p>
+        <p>#VocalForLocal</p>
+      </div>
+      <div class="column2">
+        <br><br>
+        <p>The Hungger a Product of OneGo WebDesign</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
