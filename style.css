@@ -1,4 +1,4 @@
-﻿    body {
+﻿  body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       overflow-x: hidden;
@@ -27,18 +27,24 @@
 
 
     .topnav a:hover {
-      background-color: rgb(175, 175, 175);
+      background-color: rgb(255, 145, 0);
       color: 100ck;
-    }
-
-    .topnav a.active {
-      background-color: #4CAF50;
-      color: white;
     }
 
     .topnav .icon {
       display: none;
     }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    
+    .sticky + .content {
+      padding-top: 60px;
+    }
+    
 
     @media screen and (max-width: 600px) {
       .topnav a:not(:first-child) {
@@ -78,13 +84,20 @@
     }
     
 
-    .contenta {
+    .content {
       padding: 16px;
       font-size: 18px;
       color: #000000;
       text-align: left;
     }
 
+    .content img{
+     height:250px; 
+     width:250px;
+    }
+    .content h2{
+      font-size: auto;
+      }
     .center {
       position: absolute;
       top: 50%;
@@ -92,6 +105,22 @@
       transform: translate(-50%, -50%);
       font-size: 100px;
 
+    }
+
+    @media screen and (max-width:400px){
+      .content {
+        padding: 16px;
+        font-size: 18px;
+        color: #000000;
+        text-align: left;
+      }
+      .content img{
+       height:200px; 
+       width:95%;
+      }
+      .content h2{
+       font-size: 25px;
+       }
     }
 
     @media screen and (max-width: 800px) {
@@ -283,6 +312,27 @@ p3 :hover{
     float: left;
     
   }
+}
+@media screen and( max-width:300px){
+  .dishcard{
+    width: 98%;
+    margin-left: 2.5%;
+    height: 100px;
+  }
+  .dishcard img{
+    height: 30px;
+    width: 30px;
+  }
+  .dishcard p1{
+    font-size: 10px;
+  }
+  .dishcard p2{
+    font-size: 10px;
+  }
+  .dishcard p3{
+    font-size: 10px;
+  }
+
 }
 
 
