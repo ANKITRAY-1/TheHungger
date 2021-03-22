@@ -1,7 +1,55 @@
-﻿  body {
+    body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       overflow-x: hidden;
+    }
+    #loader {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 1;
+      width: 120px;
+      height: 120px;
+      margin: -76px 0 0 -76px;
+      border: 16px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 16px solid #3498db;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
+    
+    @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    /* Add animation to "page content" */
+    .animate-bottom {
+      position: relative;
+      -webkit-animation-name: animatebottom;
+      -webkit-animation-duration: 1s;
+      animation-name: animatebottom;
+      animation-duration: 1s
+    }
+    
+    @-webkit-keyframes animatebottom {
+      from { bottom:-100px; opacity:0 } 
+      to { bottom:0px; opacity:1 }
+    }
+    
+    @keyframes animatebottom { 
+      from{ bottom:-100px; opacity:0 } 
+      to{ bottom:0; opacity:1 }
+    }
+    
+    #myDiv {
+      display: none;
+      text-align: center;
     }
     a{text-decoration: none;}
     p {
@@ -11,7 +59,8 @@
     /*navbar*/
     .topnav {
       overflow: hidden;
-      background-color: rgb(37, 35, 168);
+      background-color: rgb(44, 44, 44);
+      display: block;
 
     }
 
@@ -28,24 +77,19 @@
 
     .topnav a:hover {
       background-color: rgb(255, 145, 0);
-      color: 100ck;
+      color: rgb(12, 20, 95);
     }
 
     .topnav .icon {
       display: none;
+      height: 100%;
     }
-
-    .sticky {
-      position: fixed;
-      top: 0;
-      width: 100%;
-    }
-    
-    .sticky + .content {
-      padding-top: 60px;
+    .topnav a.active {
+font-size: 25px;
+      float:left;
+      font-family: 'Syne Mono', monospace;
     }
     
-
     @media screen and (max-width: 600px) {
       .topnav a:not(:first-child) {
         display: none;
@@ -54,7 +98,9 @@
       .topnav a.icon {
         float: right;
         display: block;
+        height: 65px;
       }
+      
     }
 
     @media screen and (max-width: 600px) {
@@ -89,11 +135,12 @@
       font-size: 18px;
       color: #000000;
       text-align: left;
+      background-color:  rgb(3, 250, 65);
     }
 
     .content img{
      height:250px; 
-     width:250px;
+     width:auto;
     }
     .content h2{
       font-size: auto;
@@ -106,8 +153,8 @@
       font-size: 100px;
 
     }
-
-    @media screen and (max-width:400px){
+    #more {display: none;}
+    @media screen and (max-width:650px){
       .content {
         padding: 16px;
         font-size: 18px;
@@ -115,8 +162,8 @@
         text-align: left;
       }
       .content img{
-       height:200px; 
-       width:95%;
+       height:auto; 
+       width:98%;
       }
       .content h2{
        font-size: 25px;
@@ -251,7 +298,7 @@
   position: absolute;
   top: 12px;
   left:110px;
-  font-size: 25px;
+  font-size: 20px;
   color: rgb(61, 58, 58);
   line-height: 100%;
 
@@ -259,7 +306,7 @@
 .dishcard p2{
   position: absolute;
   top: 10px;
-  right:20px;
+  right:15px;
   font-size: 30px;
   color: rgba(0, 0, 0, 0.753);
 }
@@ -274,9 +321,41 @@
 p3 :hover{
   color:rgb(0, 0, 0);
 }
+@media screen and (max-width: 1000px){
+  .dishcard p1{
+    top: 28px;
+    left:auto;
+    font-size: 17px;
+  }
+  .dishcard p2{
+    top: 3px;
+    right:10px;
+    font-size: 17px;
+    
+  }
+  
+}
+@media screen and (max-width : 800px){
+  .dishcard{
+    width: 98%;
+    margin-left: 2.5%;
+    height: 100px;
+  }
+  .dishcard p1{
+    top: 12px;
+    left:110px;
+    font-size: 25px;
+  
+  }
+  .dishcard p2{
+    top: 10px;
+    right:20px;
+    font-size: 30px;
+  }
+}
 @media screen and (max-width : 600px){
   .dishcard{
-    width: 95%;
+    width: 98%;
     margin-left: 2.5%;
     height: 100px;
   }
