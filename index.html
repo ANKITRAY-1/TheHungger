@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>The Hungger</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
 </head>
-
-<body onload="loadFunction()">
+<body>
   <button onclick="topFunction()" id="cartBtn"><i class="fa fa-shopping-cart"></i></button>
   <button id="food"><a href="#Food"><i class='fa fa-cutlery'></i></a></button>
-
   <div class="topnav" id="myTopnav">
     <a  href="#contact" class="active"><img src="d.jpg" style="height: 30px; border-radius: 50%;"> The Hungger</a>
     <a href="#contact" ><i class="fa fa-shopping-cart"></i> Cart</a>
@@ -29,16 +29,14 @@
     <img src="j.jpg" alt="Bugger" style="width: 100%;  opacity: 1;max-height: 450px;">
     <div class="center" style="font-family: 'Ballet', cursive;">The Hungger</div>
   </div>
-
   <div class="content">
     <img src="a.jpg"  align="right" hspace="10px" vspace="5px">
-    <h2>About The Hungger</h2>
-    <h3>Tradition since 1889</h3>
-    <p style="text-align: justify;">The Catering was founded in 100100 by Mr. Smith in lorem ipsum dolor sit
+    <h2 style="margin: 5px;">About The Hungger</h2>
+    <h3 style="margin: 5px;">Tradition since 1889</h3>
+    <p style="margin: 5px;">The Catering was founded in 100100 by Mr. Smith in lorem ipsum dolor sit
       amet,consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
       magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodoconsequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-      <span id="dots">...</span><span id="more">nulla
+      commodoconsequat. Duis aute iruredolor <span id="dots">...</span><span id="more"> in reprehenderit in voluptate velit esse cillum dolore eu fugiatnulla
       pariatur.Weonly use seasonal ingredients.
       <br>The Catering was founded in 100100 by Mr. Smith in lorem ipsum dolor sit
       amet,consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -50,14 +48,12 @@
       utlaborecommodo consequat.</span></p>
       <button onclick="readFunction()" id="myBtn">Read more...</button>
   </div>
-  
 
   <div id="Food">
-    <div class="w3-container">
+    <div class="w3-container" style="padding: 0px;">
       <div class="row">
-        <div class="column left"></div>
         <div class="column middle" style="text-align: center;">
-          <b style="font-size: 25px;">Chose a varities</b><br>
+          <b style="font-size: 25px; color: #fff;">Chose a varities</b><br>
           <button class="w3-bar-item mybtn" onclick="varites('1')"><a href="#1">Veg Starter</a></button>
           <button class="w3-bar-item mybtn" onclick="varites('2')"><a href="#2">Non-veg starter</a></button>
           <button class="w3-bar-item mybtn" onclick="varites('3')"><a href="#3">Sandwich</a></button>
@@ -76,9 +72,6 @@
           <button class="w3-bar-item mybtn" onclick="varites('16')"><a href="#16">Pizza's</a></button>
           <button class="w3-bar-item mybtn" onclick="varites('17')"><a href="#17">Desert's</a></button>
           <br>
-        </div>
-        <div class="column right">
-
         </div>
       </div>
     </div>
@@ -288,7 +281,6 @@
       <a href="javascript:void(0)">
         <img src="b.jpg">
         <p1> Schezwan Corn Dosa<img src="h.jpg" id="vegimg"></p1>
-
         <p2> &#8377 200</p2>
         <p3><span onclick="openCart('Schezwan Corn Dosa',200)"><i class="fa fa-shopping-cart"></i>
           </span>|<span>&#8505</p3>
