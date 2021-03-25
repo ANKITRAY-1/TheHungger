@@ -3,59 +3,10 @@
       font-family: Arial, Helvetica, sans-serif;
       overflow-x: hidden;
     }
-    #loader {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      z-index: 1;
-      width: 120px;
-      height: 120px;
-      margin: -76px 0 0 -76px;
-      border: 16px solid #f3f3f3;
-      border-radius: 50%;
-      border-top: 16px solid #3498db;
-      -webkit-animation: spin 2s linear infinite;
-      animation: spin 2s linear infinite;
-    }
-    
-    @-webkit-keyframes spin {
-      0% { -webkit-transform: rotate(0deg); }
-      100% { -webkit-transform: rotate(360deg); }
-    }
-    
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-    
-    /* Add animation to "page content" */
-    .animate-bottom {
-      position: relative;
-      -webkit-animation-name: animatebottom;
-      -webkit-animation-duration: 1s;
-      animation-name: animatebottom;
-      animation-duration: 1s
-    }
-    
-    @-webkit-keyframes animatebottom {
-      from { bottom:-100px; opacity:0 } 
-      to { bottom:0px; opacity:1 }
-    }
-    
-    @keyframes animatebottom { 
-      from{ bottom:-100px; opacity:0 } 
-      to{ bottom:0; opacity:1 }
-    }
-    
-    #myDiv {
-      display: none;
-      text-align: center;
-    }
     a{text-decoration: none;}
     p {
       font-family: 'Shippori Mincho B1', serif;
     }
-
     /*navbar*/
     .topnav {
       overflow: hidden;
@@ -63,7 +14,6 @@
       display: block;
 
     }
-
     .topnav a {
       float: right;
       display: block;
@@ -73,23 +23,19 @@
       text-decoration: none;
       font-size: 17px;
     }
-
-
     .topnav a:hover {
       background-color: rgb(255, 145, 0);
       color: rgb(12, 20, 95);
     }
-
     .topnav .icon {
       display: none;
       height: 100%;
     }
     .topnav a.active {
-font-size: 25px;
+      font-size: 25px;
       float:left;
       font-family: 'Syne Mono', monospace;
-    }
-    
+    } 
     @media screen and (max-width: 600px) {
       .topnav a:not(:first-child) {
         display: none;
@@ -102,7 +48,6 @@ font-size: 25px;
       }
       
     }
-
     @media screen and (max-width: 600px) {
       .topnav.responsive {
         position: relative;
@@ -120,27 +65,25 @@ font-size: 25px;
         text-align: left;
       }
     }
-
     .container {
       position: relative;
       text-align: center;
+      text-shadow: 2px 2px 5px red;
       color: rgb(253, 251, 251);
       font-size: 100px;
       background-color: rgb(62, 76, 206);
     }
-    
-
-    .content {
-      padding: 16px;
+        .content {
+      padding:160px;
       font-size: 18px;
-      color: #000000;
-      text-align: left;
-      background-color:  rgb(3, 250, 65);
+      color: #ffffff;
+      background-image: radial-gradient(rgb(0, 10, 110) 5%, rgb(0, 11, 110) 15%, rgb(0, 0, 0) 60%);
+      font-family: 'New Tegomin', serif;
     }
-
     .content img{
-     height:250px; 
+     height:200px; 
      width:auto;
+     border-radius: 50%;
     }
     .content h2{
       font-size: auto;
@@ -156,10 +99,10 @@ font-size: 25px;
     #more {display: none;}
     @media screen and (max-width:650px){
       .content {
-        padding: 16px;
+        padding: 0px;
         font-size: 18px;
-        color: #000000;
-        text-align: left;
+        color: #ffffff;
+        text-align: center;
       }
       .content img{
        height:auto; 
@@ -169,36 +112,33 @@ font-size: 25px;
        font-size: 25px;
        }
     }
-
     @media screen and (max-width: 800px) {
       .center {
         font-size: 50px;
       }
     }
-
     @media screen and (max-width: 300px) {
       .center {
         font-size: 25px;
       }
     }
-
     .mybtn {
       text-decoration: none;
       color: rgb(0, 0, 0);
       text-align: center;
-      background-color: rgb(255, 255, 255);
+      background-color: rgb(0,65,185);
       padding: 6px 10px;
       font-size: 20px;
       margin: 9px 5px;
       width: fit-content;
+      transition: 0s;
       border: none;
-      border-radius: 50%;
+      border-radius: 0%;
     }
-
     .mybtn:hover {
-      background-color: rgb(255, 104, 16);
+      background-color: rgb(32, 32, 32);
+      color: white;
     }
-
     @media screen and (max-width: 600px) {
       .mybtn {
         font-size: 15px;
@@ -207,7 +147,6 @@ font-size: 25px;
         width: 47%;
       }
     }
-
     @media screen and (max-width: 300px) {
       .mybtn {
         font-size: 15px;
@@ -217,29 +156,25 @@ font-size: 25px;
       }
     }
 
-    /* Create three unequal columns that floats next to each other */
     .column {
       float: left;
       padding: 10px;
-
     }
-
     .left,
     .right {
-      width: 15%;
+      width: 0%;
     }
-
     .middle {
-      width: 70%;
+      width: 100%;
     }
-
-    /* Clear floats after the columns */
+    .column.middle{
+      background-image: linear-gradient(black,white);
+    } 
     .row:after {
       content: "";
       display: table;
       clear: both;
     }
-
     @media screen and (max-width: 600px) {
 
       .left,
@@ -252,8 +187,6 @@ font-size: 25px;
         padding: 10px 20px;
       }
     }
-
-
 /*dish card*/
 .dishcard {
   position: relative;
@@ -321,6 +254,12 @@ font-size: 25px;
 p3 :hover{
   color:rgb(0, 0, 0);
 }
+.fa {
+  font-size: 25px;
+}
+.checked {
+  color: orange;
+}
 @media screen and (max-width: 1000px){
   .dishcard p1{
     top: 28px;
@@ -380,7 +319,7 @@ p3 :hover{
   .dishcard p3{
     bottom: 10px;
     right:15px;
-    font-size: 13px;
+    font-size: 20px;
   }
   #vegimg{
     position:absolute;
@@ -389,9 +328,8 @@ p3 :hover{
     margin: 0 0 0 5px;
     border-radius:0;
     float: left;
-    
   }
-}
+  }
 @media screen and( max-width:300px){
   .dishcard{
     width: 98%;
@@ -413,8 +351,6 @@ p3 :hover{
   }
 
 }
-
-
     #cartBtn {
       position: fixed;
       bottom: 5px;
@@ -428,8 +364,7 @@ p3 :hover{
       cursor: pointer;
       padding: 10px;
       border-radius: 4px;
-    }
-    
+    }   
     #cartBtn:hover {
       background-color: #555;
     }
@@ -446,32 +381,24 @@ p3 :hover{
       cursor: pointer;
       padding: 10px;
       border-radius: 4px;
-    }
-    
+    }   
     #food:hover {
       background-color: #555;
     }
-
-
-
-
 .column2 {
   float: left;
   width: 33%;
   padding: 0 10px;
   text-align: center;
 }
-
 /* Remove extra left and right margins, due to padding */
 .row2 {margin: 0 -5px;}
-
 /* Clear floats after the columns */
 .row2:after {
   content: "";
   display: table;
   clear: both;
 }
-
 /* Responsive columns */
 @media screen and (max-width: 600px) {
   .column2 {
@@ -480,7 +407,6 @@ p3 :hover{
     margin-bottom: 20px;
   }
 }
-
 .footer{
  float: right;
   padding: 20px 15px;
