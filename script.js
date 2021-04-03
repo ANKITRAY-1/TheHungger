@@ -1,13 +1,4 @@
-//responsive topnav--------------------------------------------------------------------------------------------------------------------------
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-//food varites-------------------------------------------------------------------------------------------------------------------------
+//food varites-------------------------------------------------------------------------------------------------------------------------------
     function varites(vartiesName) {
       var i;
       var x = document.getElementsByClassName("varites");
@@ -16,8 +7,7 @@
       }
       document.getElementById(vartiesName).style.display = "block";
     }
-    
-//readmore-----------------------------------------------------------------------------------------------------------------------------
+//readmore-----------------------------------------------------------------------------------------------------------------------------------
 function readFunction() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
@@ -32,4 +22,15 @@ function readFunction() {
     btnText.innerHTML = "Read less"; 
     moreText.style.display = "inline";
   }
+}
+//cart---------------------------------------------------------------------------------------------------------------------------------------
+function opencart(dishname,price) {
+  
+}
+//overlay------------------------------------------------------------------------------------------------------------------------------------
+function opencart() {
+  document.getElementById("mycart").style.height = "100%";
+}
+function closecart() {
+  document.getElementById("mycart").style.height = "0%";
 }
